@@ -28,7 +28,7 @@ const Projects = () => {
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-4xl font-bold text-white">Selected Projects</h2>
         <Link
-          href="projects"
+          href="/projects"
           className="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-2"
         >
           View more <FaArrowRight className="w-4 h-4" />
