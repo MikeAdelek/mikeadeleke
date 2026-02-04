@@ -5,10 +5,15 @@ const Experience = () => {
     {
       company: "Cyntonisca Ltd",
       position: "Frontend Developer",
-      period: "July 2025 - Present | Remote",
+      period: "July 2025 - January 2026 | Remote",
       responsibilities: [
         "Implemented reusable component libraries and design systems",
-        "Built SEO-optimized landing page websites for the firm, improving visibility and client engagement."
+        "Built SEO-optimized landing page websites for the firm, improving visibility and client engagement.",
+        "Architected and led the frontend for Smart Law Office using Next.js App Router and TypeScript, delivering a modular, multi-role UI (admin/client/staff) with nested layouts and route groups to streamline feature development.",
+        "Designed and implemented a reusable component library and typed UI contracts to reduce UI regressions and accelerate development.",
+        "Built client-side domain stores and composable hooks that centralized business logic for case creation, document uploads, scheduling, and billing, improving testability and predictability.",
+        "Implemented secure server-side API routes with shared TypeScript schemas to enforce end-to-end type safety and simplify backend integration.",
+        "Added Edge middleware and cookie/session utilities to harden authentication flows and provide consistent role-based routing."
       ]
     },
     {

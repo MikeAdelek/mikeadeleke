@@ -6,6 +6,14 @@ import { FaArrowRight } from "react-icons/fa6";
 const Projects = () => {
   const projects = [
     {
+      title: "Smart Law Office",
+      subtitle: "The Operating System for Modern Law Firms",
+      description:
+        "Streamline your practice with LegalFlow. From seamless client onboarding to automated document management, we provide the tools you need to run a 21st-century law office from anywhere.",
+      tags: ["Next JS (App Router)", "PostCSS", "TypeScript", "React"]
+      // link: ""
+    },
+    {
       title: "Data Visualization Dashboard",
       subtitle: "Data visualization · Recharts · Real-time updates",
       description:
