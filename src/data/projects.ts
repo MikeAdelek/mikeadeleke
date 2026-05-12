@@ -34,7 +34,7 @@ export const PROJECTS = [
     num: "02",
     title: "Bankify",
     desc: "Banking application prototype with analytics dashboards, auth stores, and form validation with Zod.",
-    tech: ["Next.js 14", "Zustand", "React Query", , "Framer Motion"],
+    tech: ["Next.js 14", "Zustand", "React Query", "Framer Motion"],
     href: "#",
   },
   {
