@@ -1,4 +1,4 @@
-export const NAV: string[] = ["intro", "about", "experience", "projects"];
+export const NAV: string[] = ["home", "about", "experience", "projects"];
 
 export const SOCIALS = [
   { label: "GitHub", href: "https://github.com/MikeAdelek" },
@@ -33,8 +33,8 @@ export const PROJECTS = [
   {
     num: "02",
     title: "Bankify",
-    desc: "Banking application prototype with analytics dashboards, auth stores, and advanced form validation with Zod.",
-    tech: ["Next.js 14", "Zustand", "React Query", "Recharts", "Framer Motion"],
+    desc: "Banking application prototype with analytics dashboards, auth stores, and form validation with Zod.",
+    tech: ["Next.js 14", "Zustand", "React Query", , "Framer Motion"],
     href: "#",
   },
   {
