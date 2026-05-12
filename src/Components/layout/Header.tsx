@@ -203,7 +203,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNav }) => {
                   cursor: "pointer",
                 }}
               >
-                SAY HELLO
+                <a href="#contact">SAY HELLO</a>
               </div>
             </motion.div>
           )}

@@ -16,7 +16,7 @@ import Footer from "@/Components/layout/Footer";
 
 export default function Home() {
   useFonts();
-  const [activeSection, setActiveSection] = React.useState("intro");
+  const [activeSection, setActiveSection] = React.useState("home");
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -60,7 +60,7 @@ export default function Home() {
         <div style={{ display: "flex", alignItems: "stretch" }}>
           {/* Hero content */}
           <section
-            id="intro"
+            id="home"
             style={{
               flex: 1,
               minHeight: "100vh",
