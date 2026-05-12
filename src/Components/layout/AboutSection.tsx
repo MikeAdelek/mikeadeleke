@@ -49,7 +49,6 @@ const AboutSection = () => {
 
         <motion.div
           variants={stagger}
-          className="text-justify"
           style={{ display: "flex", flexDirection: "column", gap: "1.4rem" }}
         >
           {[
