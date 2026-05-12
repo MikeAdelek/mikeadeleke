@@ -1,69 +1,66 @@
-export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  tech: string[];
-  image: string;
-  link: string;
-}
+export const NAV: string[] = ["intro", "about", "experience", "projects"];
 
-export const projects: Project[] = [
+export const SOCIALS = [
+  { label: "GitHub", href: "https://github.com/MikeAdelek" },
   {
-    id: "1",
-    title: "Process to Promise Conference",
-    description: "Process to Promise Virtual Conference",
-    tech: ["Next.js, Tailwind, Framer motion"],
-    image: "/process2promise.png",
-    link: "https://process2promise-virtual-conference.vercel.app/"
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/micheal-olomola-frontend-dev/",
+  },
+  { label: "Twitter", href: "https://twitter.com/yourusername" },
+];
+
+export const SKILLS = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Zustand",
+  "React Query",
+  "Node.js",
+  "Framer Motion",
+  "REST APIs",
+  "Git",
+];
+
+export const PROJECTS = [
+  {
+    num: "01",
+    title: "Smart Law Office",
+    desc: "Multi-role legal SaaS platform. Full frontend architecture, auth flows, real-time messaging, and multi-firm data isolation.",
+    tech: ["Next.js", "TypeScript", "Zustand", "Tailwind CSS"],
+    href: "https://legalflow.cyntonisca.com",
   },
   {
-    id: "2",
+    num: "02",
+    title: "Bankify",
+    desc: "Banking application prototype with analytics dashboards, auth stores, and advanced form validation with Zod.",
+    tech: ["Next.js 14", "Zustand", "React Query", "Recharts", "Framer Motion"],
+    href: "#",
+  },
+  {
+    num: "03",
     title: "E-commerce Platform",
-    description:
-      "E-commerce application built with Next.js, showcasing best practices in React development, state management, and user experience design",
+    desc: "E-commerce application built with Next.js, showcasing best practices in React development, state management, and user experience design",
     tech: ["Next.js, Zustand, React Query, Tailwind"],
-    image: "/mini-store-main.png",
-    link: "https://mini-store-two-rouge.vercel.app/"
+    href: "https://mini-store-two-rouge.vercel.app",
   },
   {
-    id: "3",
+    num: "04",
     title: "Propellent Startup Website",
-    description:
-      "Built for software startups and small businesses, to showcase your services and mark your online presence.",
+    desc: "Built for software startups and small businesses, to showcase your services and mark your online presence.",
     tech: ["React.js, Framer Motion, Tailwind CSS"],
-    image: "/propellent-main.png",
-    link: "https://propellent-nine.vercel.app/"
+    href: "https://propellent-nine.vercel.app/",
   },
   {
-    id: "4",
+    num: "05",
     title: "Data Visualization Dashboard",
-    description:
-      "A responsive event management dashboard built with React.js and TailwindCSS, now featuring live news integration.",
+    desc: "A responsive event management dashboard built with React.js and TailwindCSS, now featuring live news integration.",
     tech: ["React.js, Recharts, TypeScript"],
-    image: "/dashboard-main.png",
-    link: "https://dashboard-react-js-tailwind-css.vercel.app/"
+    href: "https://dashboard-react-js-tailwind-css.vercel.app/",
   },
-  {
-    id: "5",
-    title: "Google Flight Clone",
-    description:
-      "Flight search application built with React and TypeScript that helps you find the best flight deals worldwide.",
-    tech: ["Next, TypeScript, Axios, Skyscraper API"],
-    image: "/google-flight.png",
-    link: "https://google-flight-clone-mu.vercel.app/"
-  },
-  {
-    id: "6",
-    title: "Movie App",
-    description:
-      "Movie App built with React and TypeScript that helps you find the best movies.",
-    tech: ["React.js, Axios"],
-    image: "/movie-app.png",
-    link: "https://movie-app-beta-gray.vercel.app/"
-  }
 ];
 
 // Helper function to get project by ID
-export const getProjectById = (id: string): Project | undefined => {
-  return projects.find((project) => project.id === id);
-};
+// export const getProjectById = (id: string): Project | undefined => {
+//   return projects.find((project) => project.id === id);
+// };

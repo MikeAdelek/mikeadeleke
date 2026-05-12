@@ -1,1 +1,153 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg: var(--c-bg);
+  --color-text: var(--c-text);
+  --color-accent: var(--c-accent);
+  --color-muted: var(--c-muted);
+  --color-border: var(--c-border);
+  --font-mono: "DM Mono", monospace;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --duration-250: 250ms;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-bg: #0a0a0a;
+  --c-text: #f0ede6;
+  --c-accent: #e8d5b0;
+  --c-muted: #6b6560;
+  --c-border: #2a2825;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-mono);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::selection {
+  background: var(--c-accent);
+  color: var(--c-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* ── Component classes ── */
+@layer components {
+  .serif {
+    font-family: var(--font-serif);
+  }
+  .mono {
+    font-family: var(--font-mono);
+  }
+
+  .nav-btn {
+    @apply text-[10px] tracking-[0.22em] uppercase bg-transparent border-none cursor-none py-[6px] px-0 transition-colors duration-250;
+    color: var(--c-muted);
+  }
+  .nav-btn:hover,
+  .nav-btn.active {
+    color: var(--c-text);
+  }
+
+  .tag {
+    @apply inline-block text-[9px] tracking-[0.14em] uppercase py-[3px] px-[10px] rounded-sm;
+    color: var(--c-muted);
+    border: 1px solid var(--c-border);
+  }
+
+  .exp-grid {
+    @apply grid gap-12 py-12;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid var(--c-border);
+  }
+
+  .proj-row {
+    @apply grid gap-8 items-start py-10 cursor-none transition-opacity duration-300;
+    grid-template-columns: 3rem 1fr 5rem;
+    border-top: 1px solid var(--c-border);
+  }
+  .proj-row:hover {
+    opacity: 0.55;
+  }
+
+  .vert-social {
+    @apply text-[9px] tracking-[0.22em] uppercase cursor-none transition-colors duration-250;
+    writing-mode: vertical-rl;
+    color: var(--c-muted);
+  }
+  .vert-social:hover {
+    color: var(--c-accent);
+  }
+
+  .ghost-btn {
+    @apply text-[10px] tracking-[0.2em] uppercase bg-transparent py-3.5 px-8 cursor-none rounded-sm;
+    border: 1px solid var(--c-border);
+    color: var(--c-text);
+    transition:
+      border-color 250ms,
+      color 250ms;
+  }
+  .ghost-btn:hover {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+  }
+
+  .accent-btn {
+    @apply text-[10px] tracking-[0.2em] uppercase bg-transparent border-none cursor-none transition-colors duration-250;
+    color: var(--c-muted);
+  }
+  .accent-btn:hover {
+    color: var(--c-text);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .exp-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .proj-row {
+    grid-template-columns: 2rem 1fr;
+  }
+  .proj-row > :last-child {
+    display: none;
+  }
+  .vert-socials-wrap {
+    display: none !important;
+  }
+  .hero-h1 {
+    font-size: clamp(3rem, 14vw, 6rem) !important;
+  }
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  .nav-center {
+    display: none !important;
+  }
+}
