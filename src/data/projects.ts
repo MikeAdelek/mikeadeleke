@@ -14,11 +14,10 @@ export const SKILLS = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
-  "Zustand",
+  "Zustand & Redux",
   "React Query",
-  "Node.js",
   "Framer Motion",
-  "REST APIs",
+  // "REST APIs",
   "Git",
 ];
 
@@ -34,8 +33,8 @@ export const PROJECTS = [
     num: "02",
     title: "Bankify",
     desc: "Banking application prototype with analytics dashboards, auth stores, and form validation with Zod.",
-    tech: ["Next.js 14", "Zustand", "React Query", "Framer Motion"],
-    href: "#",
+    tech: ["Next.js", "Zustand", "React Query", "Framer Motion"],
+    href: "https://bankify-sigma.vercel.app/",
   },
   {
     num: "03",
