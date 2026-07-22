@@ -1,4 +1,10 @@
-export const NAV: string[] = ["home", "about", "experience", "projects"];
+export const NAV: string[] = [
+  "home",
+  "about",
+  "experience",
+  "projects",
+  "Blog",
+];
 
 export const SOCIALS = [
   { label: "GitHub", href: "https://github.com/MikeAdelek" },
@@ -6,7 +12,7 @@ export const SOCIALS = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/micheal-olomola-frontend-dev/",
   },
-  { label: "Twitter", href: "https://twitter.com/yourusername" },
+  // { label: "Twitter", href: "https://twitter.com/yourusernam" },
 ];
 
 export const SKILLS = [
@@ -14,10 +20,10 @@ export const SKILLS = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
-  "Zustand & Redux",
-  "React Query",
+  "Shadcn/UI",
+  "Storybook",
+  "Figma (design-to-code)",
   "Framer Motion",
-  // "REST APIs",
   "Git",
 ];
 
@@ -26,7 +32,7 @@ export const PROJECTS = [
     num: "01",
     title: "Smart Law Office",
     desc: "Multi-role legal SaaS platform. Full frontend architecture, auth flows, real-time messaging, and multi-firm data isolation.",
-    tech: ["Next.js", "TypeScript", "Zustand", "Tailwind CSS"],
+    tech: ["Next.js", "TypeScript", "Zustand", "Tailwind CSS", "Shadcn/UI"],
     href: "https://legalflow.cyntonisca.com",
   },
   {
@@ -58,8 +64,3 @@ export const PROJECTS = [
     href: "https://dashboard-react-js-tailwind-css.vercel.app/",
   },
 ];
-
-// Helper function to get project by ID
-// export const getProjectById = (id: string): Project | undefined => {
-//   return projects.find((project) => project.id === id);
-// };
