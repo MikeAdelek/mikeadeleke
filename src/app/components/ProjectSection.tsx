@@ -9,7 +9,7 @@ export default function ProjectSection() {
         delay={0.1}
         className="text-[10px] tracking-[0.3em] uppercase text-[#C9A86C] mb-16"
       >
-        03 — Projects
+        03 — Projects & Delivery
       </AnimateIn>
 
       <div className="flex flex-col gap-12">
