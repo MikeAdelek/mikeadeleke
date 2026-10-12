@@ -27,7 +27,6 @@ const AboutSection = () => {
             </span>
           </h2>
         </AnimateIn>
-
         {/* Right column */}
         <div className="flex flex-col gap-6">
           {about.map((p, i) => (
