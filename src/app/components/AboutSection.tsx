@@ -4,10 +4,10 @@ import AnimateIn from "./animation/AnimateIn";
 
 const AboutSection = () => {
   const about = [
-    "I'm a technical project manager with a frontend engineering background. I plan, run sprints and keep stakeholders aligned on web products, from requirements through delivery and handover.",
-    "I built Smart Law Office, a multi-role legal SaaS platform for law firms, and owned both its delivery and its frontend architecture: scoping three user roles, planning the build, managing risks like multi-firm data isolation and real-time messaging, and shipping it.",
-    "Because I've written the code, I translate between stakeholders and engineers without friction, scope work realistically, and spot technical risk early.",
-    "Certified in Project Management and Project Management with Asana (Great Learning). I work remotely and communicate in writing, with clear status updates and documentation.",
+    "My background spans modern frontend engineering with React, TypeScript, and design systems, paired with technical writing.",
+    "delivering multiple production-ready features across legal technology and fin-tech platforms.",
+    "Specializes in performance optimization (Core Web Vitals), accessible component architecture (WCAG 2.1 AA), and design-to-code workflows",
+    "Comfortable owning a frontend codebase end to end from architecture decisions through code review — and collaborating directly with design, product, and backend engineering.",
   ];
   return (
     <div className="py-24 md:py-36 px-6 md:px-12 max-w-7xl mx-auto">
@@ -21,9 +21,9 @@ const AboutSection = () => {
         {/* left column */}
         <AnimateIn delay={0.2}>
           <h2 className="serif text-[clamp(2rem,3.5vw,3.2rem)] font-bold leading-[1.2] text-text">
-            Delivering products{" "}
+            Building products{" "}
             <span className="italic text-accent">
-              on scope, on time, and understood.
+              people really love to use.
             </span>
           </h2>
         </AnimateIn>

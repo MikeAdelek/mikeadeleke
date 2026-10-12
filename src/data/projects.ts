@@ -16,21 +16,14 @@ export const SOCIALS = [
 ];
 
 export const SKILLS = [
-  "Project Planning",
-  "Sprint Planning",
-  "Agile / Scrum",
-  "Stakeholder Management",
-  "Scope & Risk Management",
-  "Status Reporting",
-  "Asana",
-  "Jira",
-  "Trello",
-  "ClickUp",
-  "Next.js",
   "React",
+  "Next.js",
   "TypeScript",
   "Tailwind CSS",
+  "Shadcn/UI",
+  "Storybook",
   "Figma (design-to-code)",
+  "Framer Motion",
   "Git",
 ];
 
@@ -38,14 +31,14 @@ export const PROJECTS = [
   {
     num: "01",
     title: "Smart Law Office",
-    desc: "Multi-role legal SaaS for law firms. Led delivery end to end: scoped the lawyer, staff and client roles, planned the build, managed risks (multi-firm data isolation, auth, real-time messaging) and owned the frontend architecture.",
+    desc: "Multi-role legal SaaS platform. Full frontend architecture, auth flows, real-time messaging, and multi-firm data isolation.",
     tech: ["Next.js", "TypeScript", "Zustand", "Tailwind CSS", "Shadcn/UI"],
     href: "https://legalflow.cyntonisca.com",
   },
   {
     num: "02",
     title: "Bankify",
-    desc: "Self-directed fintech prototype, planned and shipped in phases: analytics dashboards, auth flows and Zod form validation.",
+    desc: "Banking application prototype with analytics dashboards, auth stores, and form validation with Zod.",
     tech: ["Next.js", "Zustand", "React Query", "Framer Motion"],
     href: "https://bankify-sigma.vercel.app/",
   },

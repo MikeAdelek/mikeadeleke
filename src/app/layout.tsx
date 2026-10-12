@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mike Adeleke | Technical Project Manager",
-  description: "Technical Project Manager with a frontend engineering background. Scope, sprints, stakeholders and delivery for web products."
+  title: "Mike Adeleke",
+  description: "Frontend Engineer || Software Engineer || Technical Writer"
 };
 
 export default function RootLayout({
