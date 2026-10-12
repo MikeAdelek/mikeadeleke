@@ -2,10 +2,10 @@
 import AnimateIn from "./animation/AnimateIn";
 
 export default function HeroActions() {
-  const downloadCV = () => {
+  const download = (file: string) => {
     const a = document.createElement("a");
-    a.href = "/Michael_Olomola_Frontend_Engineer_Resume.pdf";
-    a.download = "Michael_Olomola_Frontend_Engineer_Resume.pdf";
+    a.href = `/${file}`;
+    a.download = file;
     a.click();
   };
 
@@ -19,8 +19,17 @@ export default function HeroActions() {
       <button onClick={scrollToWork} className="cursor-pointer">
         View Work →
       </button>
-      <button onClick={downloadCV} className="cursor-pointer">
-        Download CV →
+      <button
+        onClick={() => download("Michael_Olomola_Project_Manager_Resume.pdf")}
+        className="cursor-pointer"
+      >
+        Download PM Resume →
+      </button>
+      <button
+        onClick={() => download("Michael_Olomola_Frontend_Engineer_Resume.pdf")}
+        className="cursor-pointer text-neutral-500"
+      >
+        Frontend CV →
       </button>
     </AnimateIn>
   );

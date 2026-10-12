@@ -17,21 +17,29 @@ export default function Hero() {
           <span className="block">I&apos;m Mike,</span>
         </AnimateIn>
         <AnimateIn delay={0.4}>
-          <span className="block">a Frontend</span>
+          <span className="block">a Technical</span>
         </AnimateIn>
         <AnimateIn delay={0.5}>
-          <span className="block italic text-[#C9A86C]">Engineer</span>
+          <span className="block italic text-[#C9A86C]">Project Manager</span>
         </AnimateIn>
-        {/* <AnimateIn delay={0.6}>
-          <span className="block">& Technical </span>
+        <AnimateIn delay={0.6}>
+          <span className="block">& Frontend</span>
         </AnimateIn>
         <AnimateIn delay={0.7}>
-          <span className="block italic text-[#C9A86C]">Writer</span>
-        </AnimateIn> */}
+          <span className="block italic text-[#C9A86C]">Engineer</span>
+        </AnimateIn>
         {/* <AnimateIn delay={0.8}>
           <span className="block"></span>
         </AnimateIn> */}
       </h1>
+
+      <AnimateIn delay={0.9} className="mt-6 max-w-xl">
+        <p className="text-[14px] leading-[1.85] text-neutral-400">
+          I take web products from requirements to handover: scope, sprints,
+          stakeholders, risks and delivery, with the engineering depth to
+          build them too.
+        </p>
+      </AnimateIn>
 
       {/* Year / Role badge */}
       <AnimateIn
