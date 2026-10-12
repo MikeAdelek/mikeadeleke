@@ -20,14 +20,14 @@ export default function Hero() {
           <span className="block">a Frontend</span>
         </AnimateIn>
         <AnimateIn delay={0.5}>
-          <span className="block italic text-[#C9A86C]">Engineer</span>
+          <span className="block italic text-[#C9A86C]">Developer</span>
         </AnimateIn>
-        <AnimateIn delay={0.6}>
+        {/* <AnimateIn delay={0.6}>
           <span className="block">& Technical </span>
         </AnimateIn>
         <AnimateIn delay={0.7}>
           <span className="block italic text-[#C9A86C]">Writer</span>
-        </AnimateIn>
+        </AnimateIn> */}
         {/* <AnimateIn delay={0.8}>
           <span className="block"></span>
         </AnimateIn> */}
